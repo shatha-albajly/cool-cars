@@ -8,6 +8,8 @@ import {
   ProductImages,
   Stars,
   PageHero,
+  ShareButtons,
+
 } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -57,6 +59,8 @@ const SingleProductPage = () => {
   return (
     <Wrapper>
       <PageHero title={name} product />
+      <ShareButtons />
+
       <div className='section section-center page'>
         <Link to='/products' className='btn'>
           back to products

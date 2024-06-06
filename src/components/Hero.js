@@ -1,29 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import heroBcg from '../assets/hero-bcg.jpeg'
-import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import heroBcg from '../assets/hero2.jpg'
 const Hero = () => {
   return (
     <Wrapper className='section-center'>
       <article className='content'>
         <h1>
-          design your <br />
-          comfort zone
+          Right Place <br />
+          for Cool Cars
         </h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at
-          sed omnis corporis doloremque possimus velit! Repudiandae nisi odit,
-          aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis
-          alias?
+          This is the best place for cool cars. You can buy cool cars here.
+          You can also sell cool cars here. This is the best place for cool cars. You can buy cool cars here. You can also sell cool cars here.
+
+
         </p>
-        <Link to='/products' className='btn hero-btn'>
-          shop now
-        </Link>
+        <div className='btn-container'>
+          <Link to='/products' className='btn hero-btn'>
+            Shop now
+          </Link>
+          <Link to='/add-car' className='btn hero-btn'>
+            Sell now
+          </Link>
+        </div>
+
       </article>
       <article className='img-container'>
         <img src={heroBcg} alt='nice table' className='main-img' />
-        <img src={heroBcg2} alt='person working' className='accent-img' />
       </article>
     </Wrapper>
   )
@@ -33,12 +37,18 @@ const Wrapper = styled.section`
   min-height: 60vh;
   display: grid;
   place-items: center;
+ 
+  .hero-btn {
+
+     
+      margin-right: 1rem;
+    }
   .img-container {
     display: none;
   }
 
   p {
-    line-height: 2;
+    line-height: 1.5;
     max-width: 45em;
     margin-bottom: 2rem;
     color: var(--clr-grey-5);
@@ -57,6 +67,7 @@ const Wrapper = styled.section`
     .hero-btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
+      margin-right: 1rem;
     }
     .img-container {
       display: block;
@@ -64,7 +75,7 @@ const Wrapper = styled.section`
     }
     .main-img {
       width: 100%;
-      height: 550px;
+      height: 400px;
       position: relative;
       border-radius: var(--radius);
       display: block;

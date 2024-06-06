@@ -42,7 +42,7 @@ function FormComponent() {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <FormGroup >
           <Label>ID:</Label>
-          <Input type="number" {...register('id', {
+          <Input placeholder='Enter ID' type="number" {...register('id', {
             required: 'ID is required',
             validate: value => value > 0 || 'ID must be a positive number'
           })} />
@@ -50,7 +50,7 @@ function FormComponent() {
         </FormGroup>
         <FormGroup>
           <Label>Car Name:</Label>
-          <Input type="text" {...register('name', {
+          <Input placeholder='Enter Car Name' type="text" {...register('name', {
             required: 'Name is required',
             minLength: { value: 5, message: 'Name must be at least 5 characters' }
           })} />
@@ -58,7 +58,7 @@ function FormComponent() {
         </FormGroup>
         <FormGroup>
           <Label>Address:</Label>
-          <Input type="text" {...register('address', {
+          <Input placeholder='EnterYour Address' type="text" {...register('address', {
             required: 'Address is required',
             minLength: { value: 5, message: 'Address must be at least 5 characters' }
           })} />
@@ -66,7 +66,7 @@ function FormComponent() {
         </FormGroup>
         <FormGroup>
           <Label>Price:</Label>
-          <Input type="number" {...register('price', {
+          <Input placeholder='Enter Car Price' type="number" {...register('price', {
             required: 'Price is required',
             validate: value => value > 0 || 'Price must be a positive number'
           })} />
@@ -74,7 +74,7 @@ function FormComponent() {
         </FormGroup>
         <FormGroup>
           <Label>Name of Company:</Label>
-          <Input type="text" {...register('company', {
+          <Input type="text" placeholder='Enter Name Car Company' {...register('company', {
             required: 'Name of company is required',
             minLength: { value: 3, message: 'Name of company must be at least 3 characters' }
           })} />
@@ -82,7 +82,7 @@ function FormComponent() {
         </FormGroup>
         <FormGroup>
           <Label>Model:</Label>
-          <Input type="text" {...register('model', {
+          <Input placeholder='Enter Car Model' type="text" {...register('model', {
             required: 'Model is required',
             minLength: { value: 3, message: 'Model must be at least 3 characters' }
           })} />
@@ -90,7 +90,7 @@ function FormComponent() {
         </FormGroup>
         <FormGroup>
           <Label>Car Status:</Label>
-          <Select {...register('status', { required: 'Car status is required' })}>
+          <Select  {...register('status', { required: 'Car status is required' })}>
             <option value="">Select...</option>
             <option value="crushed">Crushed</option>
             <option value="not-crushed">Not Crushed</option>
@@ -106,7 +106,7 @@ function FormComponent() {
           setError={setError}
         />
         {error && <ErrorMessage>{error}</ErrorMessage>}
-        <SubmitButton type="submit">Submit</SubmitButton>
+        <SubmitButton className="btn btn-primary" type="submit">Submit</SubmitButton>
       </Form>
     </>
   );
@@ -147,12 +147,13 @@ export const Label = styled.label`
     display: block;
     margin-bottom: 5px;
     width: 100% !important;
+    color: var(--clr-primary-2) !important;
 
 `;
 
 export const Input = styled.input`
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid var(--clr-primary-6);
   border-radius: 4px;
     display: block;
     width: 100% !important;
@@ -160,9 +161,10 @@ export const Input = styled.input`
 `;
 
 export const Select = styled.select`
+  border: 2px solid var(--clr-primary-5);
+
   padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   width: 100% !important;
 `;
@@ -183,7 +185,6 @@ export const ErrorMessage = styled.p`
 
 
 export const SubmitButton = styled.button`
-  background-color: green;
   color: white;
   border: none;
   cursor: pointer;

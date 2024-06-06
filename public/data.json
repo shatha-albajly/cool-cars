@@ -2,7 +2,7 @@
     "data": [
         {
             "id": 1,
-            "name": "Car 1",
+            "name": "Crushed Toyota Camry",
             "image": "https://picsum.photos/id/237/200/300",
             "images": [
                 "https://picsum.photos/id/237/200/300",
@@ -12,8 +12,8 @@
                 "https://picsum.photos/id/232/200/300"
             ],
             "price": 1000,
-            "company": "BMW",
-            "model": "Model 1",
+            "company": "Toyota",
+            "model": "Camry",
             "status": "crushed",
             "seller_id": 1,
             "seller_name": "Shatha"

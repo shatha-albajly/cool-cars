@@ -1,4 +1,3 @@
-import FeaturedProducts from './FeaturedProducts'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
@@ -13,8 +12,8 @@ import ProductList from './ProductList'
 import Sort from './Sort'
 import Stars from './Stars'
 import PageHero from './PageHero'
+import ShareButtons from './ShareButtons'
 export {
-  FeaturedProducts,
   Navbar,
   Footer,
   Sidebar,
@@ -29,4 +28,5 @@ export {
   Sort,
   Stars,
   PageHero,
+  ShareButtons,
 }

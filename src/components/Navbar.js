@@ -28,7 +28,7 @@ const Nav = () => {
           })}
 
         </ul>
-        <Link className='button-add-car' to='/add-car'>Add Car</Link>
+        <Link className='btn hero-btn' to='/add-car'>Add Car</Link>
 
 
 
@@ -42,6 +42,9 @@ const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+  .hero-btn {
+     display: none !important;
+    }
 
   .nav-center {
     width: 90vw;
@@ -92,6 +95,22 @@ const NavContainer = styled.nav`
   }
    
   @media (min-width: 992px) {
+  
+  .hero-btn  {
+    background: var(--clr-primary-6);
+    border-color: transparent;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    min-width: 2rem;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1rem;
+    color: var(--clr-white);
+    margin-left: 1.2rem;
+    width: 150px
+    font-weight: 700;
+  }
    
     .nav-toggle {
       display: none;

@@ -32,7 +32,7 @@ function ImageUpload({ mainImage, setMainImage, setAdditionalImages, additionalI
       </FormGroup>
       <FormGroup>
         <Label>Additional Images (up to 5):</Label>
-        <input type="file" multiple onChange={handleAdditionalImagesChange} accept="image/*" />
+        <Input type="file" multiple onChange={handleAdditionalImagesChange} accept="image/*" />
         <AdditionalImagesContainer>
           {additionalImages.map((image, index) => (
             <OrderImage key={index}>
@@ -120,6 +120,8 @@ export const Label = styled.label`
   font-weight: bold;
     display: block;
     margin-bottom: 5px;
+        color: var(--clr-primary-2) !important;
+
     width: 100% !important;
 
 `;
@@ -130,10 +132,14 @@ export const Input = styled.input`
   border-radius: 4px;
     display: block;
     width: 100% !important;
+  border: 2px solid var(--clr-primary-6);
+
 
 `;
 
 export const Select = styled.select`
+  border: 2px solid var(--clr-primary-6);
+
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;

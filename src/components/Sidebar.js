@@ -31,7 +31,7 @@ const Sidebar = () => {
 
 
         </ul>
-        <Link className='button-add-car' to='/add-car'>  Add Car</Link>
+        <Link className='btn hero-btn' to='/add-car'>  Add Car</Link>
 
 
       </aside>
@@ -41,6 +41,11 @@ const Sidebar = () => {
 
 const SidebarContainer = styled.div`
   text-align: center;
+  .hero-btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
   .button-add-car {
     background: var(--clr-primary-6);
     border-color: transparent;
