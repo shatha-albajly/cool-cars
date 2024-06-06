@@ -1,0 +1,148 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Car 1",
+            "image": "https://picsum.photos/id/237/200/300",
+            "images": [
+                "https://picsum.photos/id/237/200/300",
+                "https://picsum.photos/id/238/200/300",
+                "https://picsum.photos/id/239/200/300",
+                "https://picsum.photos/id/231/200/300",
+                "https://picsum.photos/id/232/200/300"
+            ],
+            "price": 1000,
+            "company": "BMW",
+            "model": "Model 1",
+            "status": "crushed",
+            "seller_id": 1,
+            "seller_name": "Shatha"
+        },
+        {
+            "id": 2,
+            "name": "Car 2",
+            "image": "https://picsum.photos/id/233/200/300",
+            "images": [
+                "https://picsum.photos/id/237/200/300",
+                "https://picsum.photos/id/238/200/300",
+                "https://picsum.photos/id/239/200/300",
+                "https://picsum.photos/id/231/200/300",
+                "https://picsum.photos/id/232/200/300"
+            ],
+            "price": 500,
+            "company": "ford",
+            "model": "Model 2",
+            "status": "not crushed",
+            "seller_id": 1,
+            "seller_name": "Shatha"
+        },
+        {
+            "id": 3,
+            "name": "Car 3",
+            "image": "https://picsum.photos/id/231/200/300",
+            "images": [
+                "https://picsum.photos/id/237/200/300",
+                "https://picsum.photos/id/238/200/300",
+                "https://picsum.photos/id/239/200/300",
+                "https://picsum.photos/id/231/200/300",
+                "https://picsum.photos/id/232/200/300"
+            ],
+            "price": 3000,
+            "company": "audi",
+            "model": "Model 3",
+            "status": "not crushed",
+            "seller_id": 2,
+            "seller_name": "noha"
+        },
+        {
+            "id": 4,
+            "name": "Car 4",
+            "image": "https://picsum.photos/id/239/200/300",
+            "images": [
+                "https://picsum.photos/id/237/200/300",
+                "https://picsum.photos/id/238/200/300",
+                "https://picsum.photos/id/239/200/300",
+                "https://picsum.photos/id/231/200/300",
+                "https://picsum.photos/id/232/200/300"
+            ],
+            "price": 3000,
+            "company": "audi",
+            "model": "Model 1",
+            "status": "crushed",
+            "seller_id": 2,
+            "seller_name": "noha"
+        },
+        {
+            "id": 5,
+            "name": "Car 5",
+            "image": "https://picsum.photos/id/241/200/300",
+            "images": [
+                "https://picsum.photos/id/237/200/300",
+                "https://picsum.photos/id/238/200/300",
+                "https://picsum.photos/id/239/200/300",
+                "https://picsum.photos/id/231/200/300",
+                "https://picsum.photos/id/232/200/300"
+            ],
+            "price": 6000,
+            "company": "audi",
+            "model": "Model 6",
+            "status": "crushed",
+            "seller_id": 2,
+            "seller_name": "noha"
+        },
+        {
+            "id": 6,
+            "name": "Car 6",
+            "image": "https://picsum.photos/id/288/200/300",
+            "images": [
+                "https://picsum.photos/id/237/200/300",
+                "https://picsum.photos/id/238/200/300",
+                "https://picsum.photos/id/239/200/300",
+                "https://picsum.photos/id/231/200/300",
+                "https://picsum.photos/id/232/200/300"
+            ],
+            "price": 6000,
+            "company": "audi",
+            "model": "Model 2",
+            "status": "crushed",
+            "seller_id": 3,
+            "seller_name": "salem"
+        },
+        {
+            "id": 7,
+            "name": "Car 7",
+            "image": "https://picsum.photos/id/247/200/300",
+            "images": [
+                "https://picsum.photos/id/237/200/300",
+                "https://picsum.photos/id/238/200/300",
+                "https://picsum.photos/id/239/200/300",
+                "https://picsum.photos/id/231/200/300",
+                "https://picsum.photos/id/232/200/300"
+            ],
+            "price": 6000,
+            "company": "audi",
+            "model": "Model 3",
+            "status": "crushed",
+            "seller_id": 3,
+            "seller_name": "salem"
+        },
+        {
+            "id": 8,
+            "name": "Car 8",
+            "image": "https://picsum.photos/id/297/200/300",
+            "images": [
+                "https://picsum.photos/id/237/200/300",
+                "https://picsum.photos/id/238/200/300",
+                "https://picsum.photos/id/239/200/300",
+                "https://picsum.photos/id/231/200/300",
+                "https://picsum.photos/id/232/200/300"
+            ],
+            "price": 6000,
+            "company": "audi",
+            "model": "Model 1",
+            "status": "crushed",
+            "seller_id": 3,
+            "seller_name": "salem"
+        }
+    ]
+}
