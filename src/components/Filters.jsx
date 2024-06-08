@@ -128,6 +128,8 @@ const Filters = () => {
 }
 
 const Wrapper = styled.section`
+
+
 select{
 padding: 10px;
   margin-top: 5px;

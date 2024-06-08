@@ -3,146 +3,162 @@
         {
             "id": 1,
             "name": "Crushed Toyota Camry",
-            "image": "https://picsum.photos/id/237/200/300",
+            "image": "./images/car10.jpg",
             "images": [
-                "https://picsum.photos/id/237/200/300",
-                "https://picsum.photos/id/238/200/300",
-                "https://picsum.photos/id/239/200/300",
-                "https://picsum.photos/id/231/200/300",
-                "https://picsum.photos/id/232/200/300"
+                "./images/car10.jpg",
+                "./images/car9.jpg",
+                "./images/car13.jpg",
+                "./images/car11.jpg",
+                "./images/car12.jpg"
             ],
             "price": 1000,
             "company": "Toyota",
             "model": "Camry",
             "status": "crushed",
             "seller_id": 1,
-            "seller_name": "Shatha"
+            "seller_name": "Shatha",
+            "address": "Sana'a",
+            "seller_phone": "123456789"
         },
         {
             "id": 2,
-            "name": "Car 2",
-            "image": "https://picsum.photos/id/233/200/300",
+            "name": "Ford Model 2",
+            "image": "./images/car11.jpg",
             "images": [
-                "https://picsum.photos/id/237/200/300",
-                "https://picsum.photos/id/238/200/300",
-                "https://picsum.photos/id/239/200/300",
-                "https://picsum.photos/id/231/200/300",
-                "https://picsum.photos/id/232/200/300"
+                "./images/car11.jpg",
+                "./images/car9.jpg",
+                "./images/car13.jpg",
+                "./images/car8.jpg",
+                "./images/car12.jpg"
             ],
             "price": 500,
             "company": "ford",
             "model": "Model 2",
             "status": "not crushed",
             "seller_id": 1,
-            "seller_name": "Shatha"
+            "seller_name": "Shatha",
+            "address": "Sana'a",
+            "seller_phone": "123456789"
         },
         {
             "id": 3,
             "name": "Car 3",
-            "image": "https://picsum.photos/id/231/200/300",
+            "image": "./images/car3.jpg",
             "images": [
-                "https://picsum.photos/id/237/200/300",
-                "https://picsum.photos/id/238/200/300",
-                "https://picsum.photos/id/239/200/300",
-                "https://picsum.photos/id/231/200/300",
-                "https://picsum.photos/id/232/200/300"
+                "./images/car3.jpg",
+                "./images/car9.jpg",
+                "./images/car13.jpg",
+                "./images/car11.jpg",
+                "./images/car12.jpg"
             ],
             "price": 3000,
             "company": "audi",
             "model": "Model 3",
             "status": "not crushed",
             "seller_id": 2,
-            "seller_name": "noha"
+            "seller_name": "noha",
+            "address": "Ibb",
+            "seller_phone": "395834950348"
         },
         {
             "id": 4,
             "name": "Car 4",
-            "image": "https://picsum.photos/id/239/200/300",
+            "image": "./images/car9.jpg",
             "images": [
-                "https://picsum.photos/id/237/200/300",
-                "https://picsum.photos/id/238/200/300",
-                "https://picsum.photos/id/239/200/300",
-                "https://picsum.photos/id/231/200/300",
-                "https://picsum.photos/id/232/200/300"
+                "./images/car9.jpg",
+                "./images/car8.jpg",
+                "./images/car13.jpg",
+                "./images/car11.jpg",
+                "./images/car12.jpg"
             ],
             "price": 3000,
             "company": "audi",
             "model": "Model 1",
             "status": "crushed",
             "seller_id": 2,
-            "seller_name": "noha"
+            "seller_name": "noha",
+            "address": "Ibb",
+            "seller_phone": "395834950348"
         },
         {
             "id": 5,
             "name": "Car 5",
-            "image": "https://picsum.photos/id/241/200/300",
+            "image": "./images/car5.jpg",
             "images": [
-                "https://picsum.photos/id/237/200/300",
-                "https://picsum.photos/id/238/200/300",
-                "https://picsum.photos/id/239/200/300",
-                "https://picsum.photos/id/231/200/300",
-                "https://picsum.photos/id/232/200/300"
+                "./images/car5.jpg",
+                "./images/car9.jpg",
+                "./images/car13.jpg",
+                "./images/car11.jpg",
+                "./images/car12.jpg"
             ],
             "price": 6000,
             "company": "audi",
             "model": "Model 6",
             "status": "crushed",
             "seller_id": 2,
-            "seller_name": "noha"
+            "seller_name": "noha",
+            "address": "Ibb",
+            "seller_phone": "395834950348"
         },
         {
             "id": 6,
             "name": "Car 6",
-            "image": "https://picsum.photos/id/288/200/300",
+            "image": "./images/car6.jpg",
             "images": [
-                "https://picsum.photos/id/237/200/300",
-                "https://picsum.photos/id/238/200/300",
-                "https://picsum.photos/id/239/200/300",
-                "https://picsum.photos/id/231/200/300",
-                "https://picsum.photos/id/232/200/300"
+                "./images/car6.jpg",
+                "./images/car9.jpg",
+                "./images/car13.jpg",
+                "./images/car11.jpg",
+                "./images/car12.jpg"
             ],
             "price": 6000,
             "company": "audi",
             "model": "Model 2",
             "status": "crushed",
             "seller_id": 3,
-            "seller_name": "salem"
+            "seller_name": "salem",
+            "address": "Aden",
+            "seller_phone": "34853245832"
         },
         {
             "id": 7,
             "name": "Car 7",
-            "image": "https://picsum.photos/id/247/200/300",
+            "image": "./images/car7.jpg",
             "images": [
-                "https://picsum.photos/id/237/200/300",
-                "https://picsum.photos/id/238/200/300",
-                "https://picsum.photos/id/239/200/300",
-                "https://picsum.photos/id/231/200/300",
-                "https://picsum.photos/id/232/200/300"
+                "./images/car7.jpg",
+                "./images/car9.jpg",
+                "./images/car13.jpg",
+                "./images/car11.jpg",
+                "./images/car12.jpg"
             ],
             "price": 6000,
             "company": "audi",
             "model": "Model 3",
             "status": "crushed",
             "seller_id": 3,
-            "seller_name": "salem"
+            "seller_name": "salem",
+            "address": "Aden",
+            "seller_phone": "34853245832"
         },
         {
             "id": 8,
             "name": "Car 8",
-            "image": "https://picsum.photos/id/297/200/300",
+            "image": "./images/car8.jpg",
             "images": [
-                "https://picsum.photos/id/237/200/300",
-                "https://picsum.photos/id/238/200/300",
-                "https://picsum.photos/id/239/200/300",
-                "https://picsum.photos/id/231/200/300",
-                "https://picsum.photos/id/232/200/300"
+                "./images/car8.jpg",
+                "./images/car9.jpg",
+                "./images/car13.jpg",
+                "./images/car11.jpg",
+                "./images/car12.jpg"
             ],
             "price": 6000,
             "company": "audi",
             "model": "Model 1",
             "status": "crushed",
             "seller_id": 3,
-            "seller_name": "salem"
+            "seller_name": "salem",
+            "address": "Aden",
+            "seller_phone": "34853245832"
         }
     ]
 }

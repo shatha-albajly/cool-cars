@@ -52,8 +52,8 @@ export default ImageUpload;
 
 export const ImagePreview = styled.img`
   margin-top: 10px;
-  width: 70px !important; ;
-  height: 70px !important;
+  width: 72px !important; ;
+  height: 72px !important;
   object-fit: cover;
 `;
 
@@ -74,6 +74,7 @@ export const RemoveButton = styled.button`
   border: none;
   cursor: pointer;
   padding: 5px;
+  width: 72px;
 `;
 
 
@@ -88,6 +89,8 @@ export const AdditionalImagesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  // margin:0 auto;
+  // justify-content: center;
 `;
 
 

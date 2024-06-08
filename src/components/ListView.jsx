@@ -6,16 +6,21 @@ const ListView = ({ products }) => {
   return (
     <Wrapper>
       {products.map((product) => {
-        const { id, image, name, price, company, model, status } = product
+        const { id, image, name, price, company, model, status, address } = product
         return (
           <article key={id}>
-            <img src={image} alt={name} />
+            <img src={"../" + image} alt={name} />
             <div>
               <h4>{name}</h4>
               <h5 className='price'>{formatPrice(price)}</h5>
-              <p> <span>Company:</span> {company}</p>
-              <p> <span>Model:</span> {model}</p>
-              <p> <span>Status:</span> {status}</p>
+              <div className='info'>
+                <div ><p> <span>Company:</span> {company}</p>
+                  <p> <span>Model:</span> {model}</p></div>
+                <div><p> <span>Status:</span> {status}</p>
+                  <p> <span>Address:</span> {address}</p>
+                </div>
+              </div>
+
 
 
               {/* <p>{description.substring(0, 150)}...</p> */}
@@ -33,11 +38,18 @@ const ListView = ({ products }) => {
 const Wrapper = styled.section`
   display: grid;
   row-gap: 3rem;
+  
+  .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+  }
 
   img {
     width: 100%;
     display: block;
-    width: 300px;
+    max-width: 330px;
     height: 200px;
     object-fit: cover;
     border-radius: var(--radius);
@@ -64,7 +76,13 @@ const Wrapper = styled.section`
       grid-template-columns: auto 1fr;
       column-gap: 2rem;
       align-items: center;
+      shadow: var(--dark-shadow);
     }
+      img {
+   
+   width: 330px;
+   
+  }
   }
 `
 

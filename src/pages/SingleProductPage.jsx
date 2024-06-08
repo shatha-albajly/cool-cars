@@ -6,13 +6,15 @@ import {
   Loading,
   Error,
   ProductImages,
-  Stars,
   PageHero,
   ShareButtons,
 
 } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import ListView from '../components/ListView';
+import GridView from '../components/GridView';
+import SimilarProducts from '../components/SimilarProducts';
 const SingleProductPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -21,11 +23,17 @@ const SingleProductPage = () => {
     single_product_error: error,
     single_product: product,
     fetchSingleProduct,
-  } = useProductsContext();
+    products
+  } = useProductsContext(
+
+    );
+
+
 
   useEffect(() => {
     fetchSingleProduct(id);
     // eslint-disable-next-line
+
   }, [id]);
   useEffect(() => {
     if (error) {
@@ -46,20 +54,26 @@ const SingleProductPage = () => {
     name,
     price,
     status,
-    stars,
-    reviews,
     id: sku,
     company,
+    seller_id,
     images,
     model,
-    seller_id,
+    seller_name,
+    address,
+    seller_phone
   } = product;
+  const similarSeller = products.filter((product) => {
+    return product.seller_id === seller_id && product.id !== sku
+  })
+  const similarCompany = products.filter((product) => {
+    return product.company === company && product.id !== sku
+  })
 
   console.log(product);
   return (
     <Wrapper>
       <PageHero title={name} product />
-      <ShareButtons />
 
       <div className='section section-center page'>
         <Link to='/products' className='btn'>
@@ -68,8 +82,8 @@ const SingleProductPage = () => {
         <div className='product-center'>
           <ProductImages images={images} />
           <section className='content'>
+
             <h2>{name}</h2>
-            {/* <Stars stars={stars} reviews={reviews} /> */}
             <h5 className='price'><span>Price:</span> {formatPrice(price)}</h5>
 
 
@@ -89,15 +103,54 @@ const SingleProductPage = () => {
               <span>Status :</span>
               {status}
             </p>
-            <hr />
+            <p className='info'>
+              <span>Address :</span>
+              {address}
+            </p>
+            <hr style={{ margin: "1rem 0" }} />
+
+            <h3>Seller Details</h3>
+            <p className='info'>
+              <span>Seller Name :</span>
+              {seller_name}
+            </p>
+            <p className='info'>
+              <span>Seller Phone :</span>
+              {seller_phone}
+            </p>
+
+            <hr style={{ margin: "1rem 0" }} />
+            <ShareButtons />
+
+
           </section>
+
+
+
         </div>
+        <div className='similar'>
+          <h2>Other seller cars</h2>
+          < SimilarProducts products={similarSeller} className='similar-products' />
+
+        </div>
+        <div className='similar' >
+          <h2>Other company cars</h2>
+          < SimilarProducts products={similarCompany} className='similar-products' />
+
+        </div>
+
+
       </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.main`
+.similar{
+margin: 3rem 0;
+h2{
+  margin-bottom: 2rem;
+}}
   .product-center {
     display: grid;
     gap: 4rem;
@@ -119,6 +172,8 @@ const Wrapper = styled.main`
       font-weight: 700;
     }
   }
+  .similar-products{
+  display: flex;}
 
   @media (min-width: 992px) {
     .product-center {
