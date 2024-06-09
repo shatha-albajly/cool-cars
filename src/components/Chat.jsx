@@ -6,9 +6,8 @@ const Chat = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([]);
     const questions = [
-        'What is your favorite color?',
-        'What is your size?',
-        'Where are you located?',
+        'Is it still available?',
+        'What is the fuel type?',
         'How can we assist you?',
     ];
 
