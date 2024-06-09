@@ -12,9 +12,9 @@ import {
 } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import ListView from '../components/ListView';
-import GridView from '../components/GridView';
+
 import SimilarProducts from '../components/SimilarProducts';
+import Chat from '../components/Chat';
 const SingleProductPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -121,6 +121,7 @@ const SingleProductPage = () => {
 
             <hr style={{ margin: "1rem 0" }} />
             <ShareButtons />
+            <Chat />
 
 
           </section>
