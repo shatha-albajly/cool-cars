@@ -123,7 +123,7 @@ export const Label = styled.label`
   font-weight: bold;
     display: block;
     margin-bottom: 5px;
-        color: var(--clr-primary-2) !important;
+        // color: var(--clr-primary-2) !important;
 
     width: 100% !important;
 
@@ -135,13 +135,13 @@ export const Input = styled.input`
   border-radius: 4px;
     display: block;
     width: 100% !important;
-  border: 2px solid var(--clr-primary-6);
+  // border: 2px solid var(--clr-primary-6);
 
 
 `;
 
 export const Select = styled.select`
-  border: 2px solid var(--clr-primary-6);
+  // border: 2px solid var(--clr-primary-6);
 
   padding: 10px;
   margin-top: 5px;

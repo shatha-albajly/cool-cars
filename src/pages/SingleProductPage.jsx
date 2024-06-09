@@ -128,16 +128,20 @@ const SingleProductPage = () => {
 
 
         </div>
-        <div className='similar'>
-          <h2>Other seller cars</h2>
-          < SimilarProducts products={similarSeller} className='similar-products' />
+        {similarSeller.length > 0 &&
 
-        </div>
-        <div className='similar' >
-          <h2>Other company cars</h2>
-          < SimilarProducts products={similarCompany} className='similar-products' />
+          <div className='similar'>
+            <h2>Other seller cars</h2>
+            < SimilarProducts products={similarSeller} className='similar-products' />
 
-        </div>
+          </div>}
+
+        {similarCompany.length > 0 &&
+          <div className='similar' >
+            <h2>Other company cars</h2>
+            < SimilarProducts products={similarCompany} className='similar-products' />
+
+          </div>}
 
 
       </div>

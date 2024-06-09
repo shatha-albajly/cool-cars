@@ -147,25 +147,25 @@ export const Label = styled.label`
     display: block;
     margin-bottom: 5px;
     width: 100% !important;
-    color: var(--clr-primary-2) !important;
+    // color: var(--clr-primary-2) !important;
 
 `;
 
 export const Input = styled.input`
   padding: 10px;
-  border: 2px solid var(--clr-primary-6);
-  border-radius: 4px;
+  // border: 2px solid var(--clr-primary-6);
+  // border-radius: 4px;
     display: block;
     width: 100% !important;
 
 `;
 
 export const Select = styled.select`
-  border: 2px solid var(--clr-primary-5);
+  // border: 2px solid var(--clr-primary-5);
 
   padding: 10px;
   margin-top: 5px;
-  border-radius: 4px;
+  // border-radius: 4px;
   width: 100% !important;
 `;
 

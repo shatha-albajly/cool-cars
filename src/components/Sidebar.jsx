@@ -29,9 +29,9 @@ const Sidebar = () => {
             )
           })}
 
+          <Link className='btn hero-btn ' to='/add-car'>  Add Car</Link>
 
         </ul>
-        <Link className='btn hero-btn' to='/add-car'>  Add Car</Link>
 
 
       </aside>
@@ -44,7 +44,10 @@ const SidebarContainer = styled.div`
   .hero-btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
-      margin-right: 1rem;
+      margin-left: 1rem;
+      max-width: 150px;
+      color: var(--clr-white);
+      
     }
   .button-add-car {
     background: var(--clr-primary-6);
